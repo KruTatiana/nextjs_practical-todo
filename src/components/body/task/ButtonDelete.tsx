@@ -6,7 +6,7 @@ type ButtonDeleteTaskProps = {
 
 export const ButtonDelete = ({onClick}:ButtonDeleteTaskProps) => {
   return (
-    <button onClick={onClick}>
+    <button className='justify-self-end' onClick={onClick}>
       <Image src={'./delete.svg'} width={24} height={24} alt='Delete' />
     </button>
   )

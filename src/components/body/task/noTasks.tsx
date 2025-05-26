@@ -4,6 +4,6 @@ type NoTasksType = {
 
 export const NoTasks = ({message}: NoTasksType) => {
   return (
-    <p>{message}</p>
+    <p className="justify-self-center text-yellow-400">{message}</p>
   );
 }

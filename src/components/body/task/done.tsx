@@ -15,11 +15,11 @@ export const Done = () => {
   
   return (
     <>
-    <h2 className="self-start text-xl">Completed tasks</h2>
-      <ul className="self-start">
+    <h2 className="self-start text-xl text-violet-900">Completed tasks</h2>
+      <ul>
         {doneTodos.length > 0 ? (
           doneTodos.map(todo => (
-            <li key={todo.id} className="flex flex-row space-x-4 self-start">
+            <li key={todo.id} className="flex flex-row space-x-4 w-full justify-between">
               <label className="flex flex-row space-x-4 auto-rows-max">
                 <Checkbox 
                   checked={todo.checked} 
