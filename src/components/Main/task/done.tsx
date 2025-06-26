@@ -15,7 +15,7 @@ export const Done = () => {
 
   return (
     <>
-      <h2 className="self-start text-xl text-violet-900">Completed tasks</h2>
+      <h2 className="self-start text-xl">Completed tasks</h2>
       <ul>
         {doneTodos.length > 0 ? (
           doneTodos.map((todo) => (

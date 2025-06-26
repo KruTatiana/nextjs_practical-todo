@@ -2,26 +2,37 @@
 
 :root {
   padding: 0;
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-bg: #a78bfa;
+  --color-card: #c4b5fd;
+  --color-item: #ede9fe;
+  --color-text: #2e1065;
+  --color-primary: #fde68a;
+  --color-second: #fcd34d;
+  --color-yellowbtn-text: #a78bfa;
+  --color-toggl: #fde68a;
+  --color-toggl-bg: #4c1d95;
+  --color-modal-bg: #4d1d95ac;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+[data-theme="dark"] {
+  --color-bg: #2e1065;
+  --color-card: #4c1d95;
+  --color-item: #6d28d9;
+  --color-text: #ede9fe;
+  --color-primary: #fcd34d;
+  --color-second: #fde68a;
+  --color-yellowbtn-text: #4c1d95;
+  --color-toggl: #4c1d95;
+  --color-toggl-bg: #fde68a;
+  --color-modal-bg: #a78bfaac;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
+html {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background-color: var(--color-bg);
+  color: var(--color-text);
   font-family: Arial, Helvetica, sans-serif;
 }

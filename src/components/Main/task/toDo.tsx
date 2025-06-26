@@ -15,7 +15,7 @@ export const ToDo = () => {
 
   return (
     <>
-      <h2 className="self-start text-xl text-violet-900">New tasks</h2>
+      <h2 className="self-start text-xl">New tasks</h2>
       <ul className="mb-6">
         {activeTodos.length > 0 ? (
           activeTodos.map((todo) => (
