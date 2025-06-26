@@ -12,6 +12,8 @@
   --color-toggl: #fde68a;
   --color-toggl-bg: #4c1d95;
   --color-modal-bg: #4d1d95ac;
+  --color-checkbox-bg: #6d28d9;
+  --color-checkbox: #c4b5fd;
 }
 
 [data-theme="dark"] {
@@ -25,6 +27,8 @@
   --color-toggl: #4c1d95;
   --color-toggl-bg: #fde68a;
   --color-modal-bg: #a78bfaac;
+  --color-checkbox-bg: #c4b5fd;
+  --color-checkbox: #4c1d95;
 }
 
 html {

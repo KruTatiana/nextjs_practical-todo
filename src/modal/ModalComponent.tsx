@@ -15,8 +15,10 @@ export const Modal = ({ setModal }: ModalProps) => {
   const [description, setDescription] = useState("");
 
   const handleAdd = () => {
+    const taskDate = new Date().toLocaleDateString();
+    const taskTime = new Date().toLocaleTimeString();
     if (!title.trim() || !description.trim()) return;
-    addTodo(title, description);
+    addTodo(title, description, taskDate, taskTime);
     setTitle("");
     setDescription("");
     setModal(false);

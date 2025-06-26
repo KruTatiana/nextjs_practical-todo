@@ -15,24 +15,25 @@ export const Done = () => {
 
   return (
     <>
-      <h2 className="self-start text-xl">Completed tasks</h2>
-      <ul>
+      <h2 className="self-start text-xl mb-2">Completed tasks</h2>
+      <ul className="mb-4">
         {doneTodos.length > 0 ? (
           doneTodos.map((todo) => (
-            <li
-              key={todo.id}
-              className="flex flex-row space-x-4 w-full justify-between"
-            >
-              <label className="flex flex-row space-x-4 auto-rows-max">
+            <li key={todo.id} className="flex flex-row w-full pt-2">
+              <label className="flex flex-row w-6">
                 <Checkbox
                   checked={todo.checked}
                   onChange={() => toggleChecked(todo.id)}
                 />
-                <div>
-                  <h3>{todo.title}</h3>
-                  <p>{todo.description}</p>
-                </div>
               </label>
+              <div className="mx-4 grow flex flex-col justify-start">
+                <h3 className="text-lg">{todo.title}</h3>
+                <p className="text-sm auto-rows-max">{todo.description}</p>
+                <p>
+                  <span className="text-xs">{todo.taskDate}</span>
+                  <span className="pl-3 text-xs">{todo.taskTime}</span>
+                </p>
+              </div>
               <ButtonDelete onClick={() => removeTodo(todo.id)} />
             </li>
           ))

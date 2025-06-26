@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ImageDelete from "@/assets/ImageDelete";
 
 type ButtonDeleteTaskProps = {
   onClick: () => void;
@@ -6,8 +6,11 @@ type ButtonDeleteTaskProps = {
 
 export const ButtonDelete = ({ onClick }: ButtonDeleteTaskProps) => {
   return (
-    <button className="justify-self-end" onClick={onClick}>
-      <Image src={"./delete.svg"} width={24} height={24} alt="Delete" />
+    <button
+      className="w-6 justify-self-end text-[var(--color-second)] hover:text-[var(--color-primary)]"
+      onClick={onClick}
+    >
+      <ImageDelete width={24} height={24} />
     </button>
   );
 };
