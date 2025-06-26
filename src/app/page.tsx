@@ -1,17 +1,11 @@
-import { Header } from "../components/header";
-import { Body } from "../components/body/body";
-
+import { Header } from "../components/header/header";
+import { Main } from "../components/Main/Main";
 
 export default function Home() {
-  
-
-
   return (
-    <>
+    <div className="h-dvh flex-column alighn-center">
       <Header />
-      <main className="h-screen bg-white flex flex-col items-center gap-y-4">
-        <Body />
-      </main>
-    </>
+      <Main />
+    </div>
   );
 }
